@@ -1,0 +1,38 @@
+.benefits{
+   @extend %section;
+
+   &__list {
+      display: flex;
+      align-items: center;
+    }
+    &__point {
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: #212121;
+      margin-bottom: 10px;
+    }
+    
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__box {
+      display: flex;
+      content: '';
+      height: 120px;
+      width: 270px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f5f4fa;
+    }
+    
+    &__text {
+      line-height: 1.71;
+      color: var(--main-text-color);
+    }
+}
+
