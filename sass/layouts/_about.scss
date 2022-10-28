@@ -1,8 +1,9 @@
 
-@media screen and (min-width: 1200px){
-  .about{
-  display: none;
- }}
+.about{
+  @media screen and (max-width: 1199px){
+    display: none;
+   }
+}
 .about {
 
    @extend %section;

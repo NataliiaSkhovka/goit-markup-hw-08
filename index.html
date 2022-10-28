@@ -23,18 +23,25 @@
 
   <body class="no-scroll">
     <!--Секція хедер-->
-    <!-- <header class="header">
+     <header class="header">
       <div class="header__container container ">
-        <nav class="header__nav">
+        <div class="header__logo">
           <a
-            class="logo logo--header link list"
-            href="./index.html"
-            aria-label="Посилання на студію"
-            lang="en-us"
-          >
-            <span class="logo--text accent">Web</span>Studio</a
-          >
-          <ul class="header__list list">
+          class="logo link list"
+          href="./index.html"
+          aria-label="Посилання на студію"
+          lang="en-us">
+          <span class="logo__text accent">Web</span>Studio</a></div>
+          <button class="mobile-menu-btm" type="button">
+            <svg class="mobile-menu-icon" width="24" height="16">
+              <use class="mobile-menu-burger" href="./images/symbol-defs.svg#icon-burger_menu"></use>
+            </svg>
+            <svg width="" height="">
+              <use class="mobile-menu-close" href="./images/symbol-defs.svg#icon-close_burger"></use>
+            </svg>
+          </button>
+        <nav class="header__nav">
+            <ul class="header__list list">
             <li class="header--item">
               <a class="header__link link current" href="./index.html">Студия</a>
             </li>
@@ -62,7 +69,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header> 
     <main>
       <!--Секція замовлення послуг-->
       <!-- <section class="hero">
@@ -511,7 +518,8 @@
           <button type="submit" class="modal-button submit">Отправить</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div>-->
+    <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script> 
   </body>
 </html>

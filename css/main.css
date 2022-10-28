@@ -178,15 +178,17 @@ img {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
-.logo--text {
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo__text {
   color: var(--accent-color);
-}
-.logo--header {
-  color: #000000;
-  margin-right: 93px;
 }
 .logo--footer {
   color: var(--primery-white-color);
@@ -705,6 +707,27 @@ textarea {
   margin-left: 3px;
 }
 
+.mobile-menu-btm {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+}
+
+.mobile-menu-close {
+  opacity: 0;
+}
+
 .hero {
   background-color: #2f303a;
   text-align: center;
@@ -737,123 +760,29 @@ textarea {
 .header {
   outline: 1px solid #eeeeee;
   background-color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+
+.header__logo {
+  color: #000000;
+  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header--item:not(:last-child) {
-  margin-right: 50px;
-}
-.header__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
-}
-.header__link.current::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border: 2px;
-  background-color: var(--accent-color);
-  left: 0;
-  bottom: 0;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition: -webkit-transform 250ms var(--timing-function);
-  transition: -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-}
-.header__link:hover, .header__link:focus,
-.header .accent,
-.header .current {
-  color: var(--accent-color);
-  outline: hidden;
+  display: none;
 }
 
 .header-contact {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
-}
-.header-contact__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: aling-items;
-      -ms-flex: aling-items;
-          flex: aling-items;
-  color: var(--main-text-color);
-}
-.header-contact--item:not(:last-child) {
-  margin-right: 50px;
-}
-.header-contact__link:hover, .header-contact__link:focus,
-.header-contact .accent,
-.header-contact .current {
-  color: var(--accent-color);
-  outline: hidden;
-}
-
-.mail-icon,
-.tel-icon {
-  fill: currentColor;
-  margin-right: 10px;
+  display: none;
 }
 
 .benefits {
@@ -942,11 +871,12 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .about {
     display: none;
   }
 }
+
 .about {
   padding-top: 0;
 }
