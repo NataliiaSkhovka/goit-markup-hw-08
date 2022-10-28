@@ -1,17 +1,4 @@
-/*сетка*/
-.cards-set {
-   display: flex;
-   flex-wrap: wrap;
-   margin-right: -30px;
-   margin-bottom: -30px;
- }
- .cards-set__item {
-   background-color: var(--primery-white-color);
-   border: 1px solid #eeeeee;
-   margin-right: 30px;
-   margin-bottom: 30px;
-   flex-basis: calc((100% - 90px) / 3);
- }
+
 .card-set{
   display: flex;
   flex-wrap: wrap;
@@ -19,5 +6,12 @@
 }
 
 .card-set__item{
+  flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
+}
+.card-set__item-port{
+  background-color: var(--primery-white-color);
+  border: 1px solid #eeeeee;
+  // margin-right: 30px;
+  // margin-bottom: 30px;
   flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
 }

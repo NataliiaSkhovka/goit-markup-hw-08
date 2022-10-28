@@ -24,22 +24,65 @@
   <body class="no-scroll">
     <!--Секція хедер-->
     <header class="header">
-      <div class="header__container container">
-        <nav class="header__nav">
+      <div class="header__container container ">
+        <div class="header__logo">
           <a
-            class="logo logo--header link list"
-            href="./index.html"
-            aria-label="Посилання на студію"
-            lang="en-us"
-          >
-            <span class="logo--text accent">Web</span>Studio</a
-          >
-          <ul class="header__list list">
+          class="logo link list"
+          href="./index.html"
+          aria-label="Посилання на студію"
+          lang="en-us">
+          <span class="logo__text accent">Web</span>Studio</a></div>
+          <button class="mobile-menu-btn" type="button" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+              <use class="mobile-menu-burger" href="./images/symbol-defs.svg#icon-burger_menu"></use>
+            </svg>
+            <svg width="24" height="16">
+              <use class="mobile-menu-close" href="./images/symbol-defs.svg#icon-close_burger"></use>
+            </svg>
+          </button>
+          <!--Мобильное меню-->
+    <div class="mobile-menu" data-menu>
+			<ul class="list mobile-menu-nav list">
+				<li class="mobile-menu-nav__item" >
+					<a class="link current" href="./index.html">Студия</a>
+				</li>
+				<li class="mobile-menu-nav__item" >
+					<a class="link" href="./portfolio.html">Портфолио</a>
+				</li>
+				<li class="mobile-menu-nav__item" >
+					<a class="link" href="#contacts">Контакты</a>
+				</li>
+			</ul>
+			<ul class="list mobile-menu-contacts list">
+				<li class="mobile-menu-contacts__item">
+					<a class="link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+				</li>
+				<li class="mobile-menu-contacts__item">
+					<a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				</li>
+			</ul>
+			<ul class="list mobile-menu-socials list">
+				<li class="mobile-menu-socials__item">
+					<a class="mobile-menu-socials__link link" href="">Instagram</a>
+				</li>
+				<li class="mobile-menu-socials__item">
+					<a class="mobile-menu-socials__link link" href="">Twitter</a>
+				</li>
+				<li class="mobile-menu-socials__item">
+					<a class="mobile-menu-socials__link link" href="">Facebook</a>
+				</li>
+				<li class="mobile-menu-socials__item">
+					<a class="mobile-menu-socials__link link" href="">Linkedin</a>
+				</li>
+			</ul>
+		</div>
+        <nav class="header__nav">
+            <ul class="header__list list">
             <li class="header--item">
-              <a class="header__link link" href="./index.html">Студия</a>
+              <a class="header__link link " href="./index.html">Студия</a>
             </li>
             <li class="header--item">
-              <a class="header__link current link" href="./portfolio.html">Портфолио</a>
+              <a class="header__link link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header--item"><a class="header__link link" href="#contacts">Контакты</a></li>
           </ul>
@@ -62,7 +105,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> 
     <!--Кнопки фільтри-->
     <main>
       <section class="portfolio">
@@ -84,8 +127,8 @@
             </li>
           </ul>
           <!--Cards-set-->
-          <ul class="portfolio__list cards-set list">
-            <li class="portfolio__item cards-set__item">
+          <ul class="portfolio__list card-set list">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -109,7 +152,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -137,7 +180,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -164,7 +207,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -191,7 +234,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -218,7 +261,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -243,7 +286,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -270,7 +313,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img
@@ -297,7 +340,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item cards-set__item">
+            <li class="portfolio__item card-set__item-port">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__img--thumb">
                   <img

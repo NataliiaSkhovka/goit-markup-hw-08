@@ -39,12 +39,12 @@
 
     @media screen and(min-width: 768px){
       display: block;
+      // margin-right: 84px;
     }
 //     display: flex;
 //     align-items: center;
 //   
   }
-
 
 // .header-mobile{
 //   display: none;
@@ -71,28 +71,26 @@
       display: flex;
       font-size: 14px;
       line-height: 1.14;
-      margin-left: auto;
       padding-top: 32px;
       padding-bottom: 32px;
-      align-items: center;
-      color: var(--secondary-text-color);
-      font-weight: 500;
-      letter-spacing: 0.02em;
-     
-      transition: color 250ms var(--timing-function);
     }
-  
-  
 
   &__link {
+    @media screen and(min-width: 768px){
     display: flex;
     align-items: center;
     flex: aling-items;
     color: var(--main-text-color);
-  }
+  }}
   &--item:not(:last-child) {
+    @media screen and(min-width: 768px)and (max-width: 1199px){
+      margin-bottom: 10px;
+    }
+
+    @media screen and(min-width: 1200px){
     margin-right: 50px;
-  }
+  }}
+
   &__link:hover,
   &__link:focus,
   .accent,

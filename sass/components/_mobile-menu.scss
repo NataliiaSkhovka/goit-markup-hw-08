@@ -13,7 +13,13 @@
     display: none;
   }
 }
-
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus,
+.accent,
+.current {
+  color: var(--accent-color);
+  outline: hidden;
+}
 .mobile-menu-burger{
   transition: 500ms;
   .mobile-menu-btn.is-open & {opacity: 0;}
@@ -103,7 +109,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;
-color: var(#2196f3);
+color: #2196f3;
 
 }
 
