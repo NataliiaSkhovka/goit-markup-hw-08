@@ -15,11 +15,13 @@
 }
 
 .mobile-menu-burger{
+  transition: 500ms;
   .mobile-menu-btn.is-open & {opacity: 0;}
 
 }
 .mobile-menu-close{
   opacity: 0;
+  transition: 500ms;
 
   .mobile-menu-btn.is-open & {opacity: 1;}
 }
@@ -56,10 +58,12 @@
   line-height: 47px;
   letter-spacing: 0.02em;
 
-color: #212121;
+  color: #212121;
 
 }
-
+.mobile-menu-nav__item{
+  color: var(#212121);
+}
 .mobile-menu-nav__item{
   &:not(:last-child){
     margin-bottom: 32px;}
@@ -99,7 +103,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;
-color: #2196f3;
+color: var(#2196f3);
 
 }
 
