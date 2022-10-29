@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 
-.portfolio, .about, .hero {
+.about, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -1318,6 +1318,16 @@ textarea {
   border: 1px solid var(--accent-color);
 }
 
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .portfolio__img--thumb {
   position: relative;
   overflow: hidden;
