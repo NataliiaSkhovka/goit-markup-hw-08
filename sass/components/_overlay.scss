@@ -1,4 +1,4 @@
-.overlay{
+ .overlay{
    position: absolute;
    bottom: 0;
    left: 0;
@@ -27,12 +27,22 @@
       bottom: 0;
       left: 0;
       margin: 0;
-      width: 322px;
+      width: 402px;
+      height: 140px;
       top: 50%;
       left: 50%;
     
       transform: translate(-50%, -50%);
       transition: transform 250ms var(--timing-function);
+
+      @media screen and (min-width: 768px){
+        width: 306px;
+        height: 168px;
+      }
+      @media screen and (min-width: 1200px){
+        width: 322px;
+        
+      }
     }
  }
  
