@@ -1,27 +1,11 @@
 .portfolio {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px){
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  @extend %section;
 
   &__img--thumb {
     position: relative;
     overflow: hidden;
   }
 
-  &__list{
-    --items: 1;
-
-    @media screen and (min-width: 768px){
-      --items:2;
-       }
-    @media screen and (min-width: 1200px){
-      --items:3;
-    }
-  }
   &__link {
     display: block;
     transition: box-shadow 120ms var(--timing-function);
@@ -46,22 +30,5 @@
   }
   &__cards {
     padding: 20px 10px 20px 24px;
-  }
-
-  &__item{
-        width: 450px;
-        height: 404px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-
-       @media screen and (min-width: 768px) and (max-width: 1199px){
-        width: 354px;
-        
-       }
-
-       @media screen and (min-width: 1200px){
-        width: 370px;
-        
-       }
   }
 }

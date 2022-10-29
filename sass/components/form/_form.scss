@@ -1,4 +1,12 @@
 .footer-form {
-   
-   margin-left: 93px;
+  @media screen and (min-width: 480px) and (max-width: 1199px){
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;}
+
+  @media screen and (min-width: 1200px){
+   margin-left: 93px;}
  }
