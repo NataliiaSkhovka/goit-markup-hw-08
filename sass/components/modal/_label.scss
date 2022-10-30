@@ -3,14 +3,24 @@
    align-items: center;
    margin-bottom: 30px;
    justify-content: center;
-   line-height: 1.71;
+   font-size: 12px;
+   line-height: 1.16;
    color: var(--main-text-color);
+   letter-spacing: 0.03em;
+
+   @media screen and (min-width: 1200px){
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+     }
  }
  .modal-form-label {
    display: block;
    margin-bottom: 4px;
    font-size: 12px;
-   line-height: 1.16;
-   letter-spacing: 0.01em;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
    color: var(--main-text-color);
+
  }
+ 

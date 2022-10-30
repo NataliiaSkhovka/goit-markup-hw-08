@@ -592,15 +592,24 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--main-text-color);
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+  }
 }
 
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.71;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
 }
@@ -610,8 +619,8 @@ img {
   top: 50%;
   left: 50%;
   background-color: var(--primery-white-color);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -622,6 +631,12 @@ img {
   transition: opasity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-form {
@@ -636,13 +651,20 @@ img {
 }
 
 .modal-title {
+  width: 370px;
   margin-bottom: 16px;
   margin-top: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+    width: 448px;
+  }
 }
 
 .modal-form-list {
@@ -901,8 +923,8 @@ textarea {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/Img_L.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/Img_L.jpg");
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
