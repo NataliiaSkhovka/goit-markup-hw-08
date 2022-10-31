@@ -375,7 +375,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-left: 93px;
+    display: blok;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 
@@ -416,6 +419,10 @@ img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
     margin-left: 12px;
     padding: 10px 29px;
   }
@@ -1451,8 +1458,7 @@ textarea {
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer__container {
