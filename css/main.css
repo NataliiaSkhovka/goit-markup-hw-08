@@ -207,6 +207,9 @@ img {
 .logo__text {
   color: var(--accent-color);
 }
+.logo--header {
+  color: #000;
+}
 .logo--footer {
   color: var(--primery-white-color);
   display: -webkit-inline-box;
@@ -359,7 +362,7 @@ img {
       flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .footer-form {
     display: block;
     text-align: center;
@@ -370,7 +373,14 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 60px;
-    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -405,13 +415,17 @@ img {
           align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .btn--footer {
-    display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn--footer {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -843,15 +857,15 @@ textarea {
   color: #212121;
 }
 
-.mobile-menu-nav__item {
-  color: var(#212121);
-}
-
 .mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .mobile-menu-nav__item .current {
   color: #2196f3;
+}
+
+.mobile-menu-nav__link {
+  color: #212121;
 }
 
 .mobile-menu-contacts {
@@ -863,12 +877,20 @@ textarea {
   color: #757575;
 }
 
+.mobile-menu-contacts__item {
+  color: #757575;
+}
+
 .mobile-menu-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .mobile-menu-contacts__item .accent {
   font-size: 34px;
   color: #2196f3;
+}
+
+.mobile-menu-contacts__link {
+  color: #757575;
 }
 
 .mobile-menu-socials {
@@ -891,6 +913,10 @@ textarea {
 .mobile-menu-socials__item:not(:last-child) .mobile-menu-socials__link {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.21);
+}
+
+.mobile-menu-socials__link {
+  color: var(--accent-color);
 }
 
 .hero {
@@ -983,9 +1009,52 @@ textarea {
       flex-wrap: wrap;
   gap: 50px;
 }
+@media screen and (min-width: 768px) {
+  .header__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    -webkit-transition: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
+  }
+}
+.header__link.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border: 2px;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+.header__link:hover, .header__link:focus,
+.header .accent,
+.header .current {
+  color: var(--accent-color);
+  outline: hidden;
+}
 
 .header__logo {
-  color: #000000;
   margin-right: 88px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1007,6 +1076,19 @@ textarea {
 @media screen and (min-width: 768px) {
   .header__nav {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__nav--item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
