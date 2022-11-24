@@ -451,13 +451,18 @@ img {
 }
 
 .footer-form__label {
-  display: block;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primery-white-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__label {
+    text-align: start;
+  }
 }
 
 .backdrop {
