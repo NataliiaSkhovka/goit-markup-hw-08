@@ -1,5 +1,6 @@
 .signup {
   text-align: center;
+  
 
 @media screen and (min-width: 1200px) {
    text-align: start;
@@ -12,11 +13,18 @@
    line-height: 1.14;
    text-transform: uppercase;
    color: var(--primery-white-color);
+   text-align: center;
+  
+
+   @media screen and (min-width: 1200px) {
+      text-align: start;
+   }
 }
 }
 .footer-form {
   display: block;
-
+  text-align: center;
+ 
 @media screen and (min-width: 1200px) {
     display: flex;  
 }
