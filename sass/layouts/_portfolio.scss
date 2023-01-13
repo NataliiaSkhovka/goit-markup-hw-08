@@ -23,32 +23,32 @@
   background-color: var(--primery-white-color);
   border: 1px solid #eeeeee;
 
-  width: 450px;
-  height: 404px;
+  max-width: 450px;
+  max-height: 404px;
 
  @media screen and (min-width: 768px) {
-  width: 354px;
-  height: 440px;
+  max-width: 354px;
+  max-height: 440px;
  }
 
  @media screen and (min-width: 1200px){
-  width: 370px;
-  height: 404px;
+  max-width: 370px;
+  max-height: 404px;
  }
  }
   &__img--thumb {
     position: relative;
     overflow: hidden;
-    width: 450px;
-    height: 294px;
+    max-width: 450px;
+    max-height: 294px;
     
     @media screen and (min-width: 768px) {
-      width: 354px;
+      max-width: 354px;
       
      }
 
      @media screen and (min-width: 1200px) {
-      width: 370px;
+      max-width: 370px;
       
      }
 
@@ -64,7 +64,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   &__title {
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -78,16 +78,16 @@
   }
   &__cards {
     padding: 20px 10px 20px 24px;
-      width: 450px;
-      height: 110px;
+    max-width: 450px;
+    max-height: 110px;
 
     @media screen and (min-width: 768px) {
-      width: 354px;
-      height: 146px;
+      max-width: 354px;
+      max-height: 146px;
      }
      @media screen and (min-width: 1200px) {
-      width: 370px;
-      height: 110px;
+      max-width: 370px;
+      max-height: 110px;
      }
   }
 }
