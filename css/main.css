@@ -1035,7 +1035,7 @@ textarea {
             align-items: center;
     position: relative;
     color: var(--secondary-text-color);
-    font-weight: 500;
+    font-weight: 500px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     padding-top: 32px;
