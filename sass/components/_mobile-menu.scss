@@ -1,3 +1,4 @@
+
 .mobile-menu-btn{
   background-color: transparent;
   border: none;
@@ -12,6 +13,7 @@
   @media screen and(min-width: 768px){
     display: none;
   }
+
 }
 .mobile-menu-btn:hover,
 .mobile-menu-btn:focus,
@@ -22,6 +24,7 @@
 }
 .mobile-menu-burger{
   transition: 500ms;
+  
   .mobile-menu-btn.is-open & {opacity: 0;}
 
 }
