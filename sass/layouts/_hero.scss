@@ -54,7 +54,7 @@
    &__title {
       font-weight: 900;
       font-size: 26px;
-      width: 360px;
+      
       text-align: center;
       line-height: 1.61;
       letter-spacing: 0.06em;
@@ -65,7 +65,10 @@
       margin-bottom: 30px;
       margin-left: auto;
 
-      
+      @media screen and (min-width: 480px) {
+         width: 360px;
+ }
+ 
        @media screen and (min-width: 1200px)and (max-width: 1600px) {
         width: 696px;
         font-size: 44px;
