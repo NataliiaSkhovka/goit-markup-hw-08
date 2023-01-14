@@ -9,6 +9,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
+  
   transform: scale(1) translate(-50%, -50%);
   transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function);
   

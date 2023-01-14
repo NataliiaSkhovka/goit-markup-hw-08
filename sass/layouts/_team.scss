@@ -38,16 +38,16 @@
        border-radius: 0px 0px 4px 4px;
 
        max-width: 450px;
-       max-height: 622px;
+       height: 622px;
 
        @media screen and (min-width: 768px) and (max-width: 1199px){
         max-width: 354px;
-        max-height: 536px;
+        height: 536px;
        }
 
        @media screen and (min-width: 1200px){
         max-width: 270px;
-        max-height: 428px;
+        height: 428px;
        }
      }
     //  &__item:not(:last-child) {
