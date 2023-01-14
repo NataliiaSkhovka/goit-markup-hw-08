@@ -14,8 +14,13 @@
     margin-top: 50px;
     padding: 0;
     text-align: center;
+    justify-content: center;
+    --items:1;
+   
 
-    --items:2;
+    @media screen and (min-width: 480px){
+      --items:2;
+    }
 
     @media screen and (min-width: 768px){
       --items:3;
@@ -34,12 +39,12 @@
     border-radius: 4px;
     color: #afb1b8;
     transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
-    max-width: 210px;
+    width: 210px;
     height: 92px;
     
     
     @media screen and (min-width: 768px){
-      max-width: 226px;
+      width: 226px;
       
     }
     
