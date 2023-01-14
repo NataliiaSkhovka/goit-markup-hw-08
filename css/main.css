@@ -969,8 +969,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/main/Header_L.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/main/Header_L.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/Header_L.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/Header_L.jpg");
     padding: 200px 0;
   }
 }
@@ -1234,7 +1234,7 @@ textarea {
   background-position: center;
   background-color: #f5f4fa;
   max-width: 450px;
-  max-height: 120px;
+  height: 120px;
 }
 @media screen and (min-width: 768px) {
   .benefits__box {
@@ -1250,7 +1250,7 @@ textarea {
   line-height: 1.71;
   color: var(--main-text-color);
   max-width: 450px;
-  max-height: 50px;
+  height: 50px;
 }
 @media screen and (min-width: 768px) {
   .benefits__text {
@@ -1260,7 +1260,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .benefits__text {
     max-width: 270px;
-    max-height: 75px;
+    height: 75px;
   }
 }
 
@@ -1441,7 +1441,7 @@ textarea {
   -webkit-transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
   width: 210px;
-  height: 92px;
+  max-height: 92px;
 }
 @media screen and (min-width: 768px) {
   .clients__link {
