@@ -627,8 +627,8 @@ img {
   top: 50%;
   left: 50%;
   background-color: var(--primery-white-color);
-  width: 100%;
-  height: 100%;
+  min-width: 450px;
+  min-height: 609px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -671,7 +671,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal-title {
     line-height: 1.15;
-    max-width: 448px;
+    width: 448px;
   }
 }
 
